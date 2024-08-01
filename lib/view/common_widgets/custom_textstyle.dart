@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class CustomTextStyle {
   static TextStyle labelTextStyle(BuildContext context) {
-    double height = MediaQuery.of(context).size.height /58;
+    double height = MediaQuery.of(context).size.height /60;
     return TextStyle(
         color: Colors.black, fontSize: height, fontWeight: FontWeight.w500);
   }

@@ -191,6 +191,7 @@ class _CustomerRegistrationState extends State<CustomerRegistration> {
             ),
                 (Route<dynamic> route) => false,
           );
+
         },
           icon: const Icon(Icons.arrow_back_outlined,color: Colors.white,),
         ):const SizedBox.shrink(),
@@ -236,10 +237,10 @@ class _CustomerRegistrationState extends State<CustomerRegistration> {
           ),
           Padding(
               padding:  EdgeInsets.only(
-               top: height/50,
+               top: height/20,
                left: width/30,
                right: width/30,
-              bottom: height/80),
+              bottom: height/50),
             child: Container(
               decoration: BoxDecoration(
                   color: Colors.white,
@@ -263,7 +264,7 @@ class _CustomerRegistrationState extends State<CustomerRegistration> {
                         horizontal: width /25),
                     child: ListView(
                       children: [
-                        SizedBox(height: height/120,),
+                        SizedBox(height: height/70,),
                         commonLabel(context, " PAN Number"),
                         SizedBox(height: height/120,),
                         ///PAN TextField
@@ -289,8 +290,10 @@ class _CustomerRegistrationState extends State<CustomerRegistration> {
                           maxLines: 1,
                           decoration: InputDecoration(
                             contentPadding: EdgeInsets.symmetric(
-                                horizontal: MediaQuery.of(context).size.width / 70),
+                              vertical: height/90,
+                                horizontal: width / 70),
                             filled: true,
+                            isDense: true,
                             fillColor: const Color(0xFFF2F2F2),
                             enabledBorder: OutlineInputBorder(
                               borderSide: BorderSide.none,
@@ -304,6 +307,7 @@ class _CustomerRegistrationState extends State<CustomerRegistration> {
                               borderSide: BorderSide.none,
                               borderRadius: BorderRadius.circular(10),
                             ),
+
                             suffixIcon:panVerifyProvider.isLoading ? Container(
                               padding: const EdgeInsets.all(12.0),
                               width: 24,
@@ -332,8 +336,11 @@ class _CustomerRegistrationState extends State<CustomerRegistration> {
                           maxLines: 1,
                           decoration: InputDecoration(
                               contentPadding:
-                                  EdgeInsets.symmetric(horizontal: width / 70),
+                                  EdgeInsets.symmetric(
+                                    vertical: height/90,
+                                      horizontal: width / 70),
                               filled: true,
+                              isDense: true,
                               fillColor: const Color(0xFFF2F2F2),
                               enabledBorder: OutlineInputBorder(
                                 borderSide: BorderSide.none,
@@ -364,8 +371,10 @@ class _CustomerRegistrationState extends State<CustomerRegistration> {
                           maxLines: 1,
                           decoration: InputDecoration(
                               contentPadding: EdgeInsets.symmetric(
-                                  horizontal: MediaQuery.of(context).size.width / 70),
+                                  vertical: height/90,
+                                  horizontal: width / 70),
                               filled: true,
+                              isDense: true,
                               fillColor: const Color(0xFFF2F2F2),
                               enabledBorder: OutlineInputBorder(
                                 borderSide: BorderSide.none,
@@ -399,9 +408,11 @@ class _CustomerRegistrationState extends State<CustomerRegistration> {
                           maxLines: 1,
                           decoration: InputDecoration(
                               contentPadding: EdgeInsets.symmetric(
-                                  horizontal: MediaQuery.of(context).size.width / 70),
+                                  vertical: height/90,
+                                  horizontal: width / 70),
+                              isDense: true,
                               prefixIcon: SizedBox(
-                                height: height/30,
+                                height: height/200,
                                 width: width/50,
                                 child: Center(
                                   child: Text(
@@ -437,7 +448,7 @@ class _CustomerRegistrationState extends State<CustomerRegistration> {
                           validator: validateAddress,
                           cursorColor: Colors.grey,
                           style: CustomTextStyle.textFieldTextStyle(context),
-                          maxLines: 2,
+                          maxLines: 1,
                           decoration: InputDecoration(
                               contentPadding: EdgeInsets.symmetric(
                                 vertical: height/70,
@@ -473,7 +484,7 @@ class _CustomerRegistrationState extends State<CustomerRegistration> {
                           keyboardType: TextInputType.text,
                           cursorColor: Colors.grey,
                           style: CustomTextStyle.textFieldTextStyle(context),
-                          maxLines: 2,
+                          maxLines: 1,
                           decoration: InputDecoration(
                               contentPadding: EdgeInsets.symmetric(
                                   vertical: height/70,
@@ -515,8 +526,10 @@ class _CustomerRegistrationState extends State<CustomerRegistration> {
                           },
                           decoration: InputDecoration(
                               contentPadding: EdgeInsets.symmetric(
-                                  horizontal: MediaQuery.of(context).size.width / 70),
+                                  vertical: height/90,
+                                  horizontal:width / 70),
                               filled: true,
+                              isDense: true,
                               fillColor: const Color(0xFFF2F2F2),
                               enabledBorder: OutlineInputBorder(
                                 borderSide: BorderSide.none,
@@ -554,8 +567,10 @@ class _CustomerRegistrationState extends State<CustomerRegistration> {
                                   maxLines: 1,
                                     decoration: InputDecoration(
                                       contentPadding: EdgeInsets.symmetric(
-                                          horizontal: MediaQuery.of(context).size.width / 70),
+                                          vertical: height/90,
+                                          horizontal: width / 70),
                                       filled: true,
+                                        isDense: true,
                                       fillColor: const Color(0xFFF2F2F2),
                                       enabledBorder: OutlineInputBorder(
                                         borderSide: BorderSide.none,
@@ -579,8 +594,10 @@ class _CustomerRegistrationState extends State<CustomerRegistration> {
                                     maxLines: 1,
                                     decoration: InputDecoration(
                                         contentPadding: EdgeInsets.symmetric(
-                                            horizontal: MediaQuery.of(context).size.width / 70),
+                                            vertical: height/90,
+                                            horizontal: width / 70),
                                         filled: true,
+                                        isDense: true,
                                         fillColor: const Color(0xFFF2F2F2),
                                         enabledBorder: OutlineInputBorder(
                                           borderSide: BorderSide.none,
