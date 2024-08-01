@@ -181,6 +181,7 @@ class _CustomerRegistrationState extends State<CustomerRegistration> {
     return Scaffold(
       backgroundColor: const Color(0xFFF5F6F9),
       appBar:AppBar(
+
         title: Text(widget.isUpdate == true? "Update Details" :'Registration',style: const TextStyle(color: Colors.white),),
         leading: widget.isUpdate == true?  IconButton(onPressed: (){
           Navigator.pushAndRemoveUntil(
