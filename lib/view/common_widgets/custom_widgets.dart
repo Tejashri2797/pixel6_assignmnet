@@ -12,7 +12,7 @@ Widget commonLabel(BuildContext context, String label) => RichText(
 
 Widget commonButton(BuildContext context,String name)=>
     Container(
-      height: MediaQuery.of(context).size.height/20,
+      height: MediaQuery.of(context).size.height/24,
       width:   MediaQuery.of(context).size.width/2.5,
       decoration:  BoxDecoration(
           color: const Color.fromRGBO(115, 103, 240, 1),
